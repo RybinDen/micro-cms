@@ -1,0 +1,11 @@
+{
+"require": {
+"nikic/fast-route" : "*",
+"league/plates": "3.*",
+"illuminate/database": "5.*"
+},
+"autoload": {
+"classmap": ["models","controllers"],
+"files":["db.php","Controller.php"] 
+}
+}
