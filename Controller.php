@@ -1,16 +1,14 @@
 <?php 
+use League\Plates\Engine;
 class Controller{
     public $templates;
 
-    public function __construct()
-    {
-        $this->templates = new \League\Plates\Engine('templates');
-// Load URI extension using global variable
+	public function __construct(){
+        $this->templates = new Engine('templates');
 $this->templates->loadExtension(new \League\Plates\Extension\URI($_SERVER['PATH_INFO']));
-
     }
 
-public function index(){	
+public function index(){
 echo $this->templates->render('index', [
 'name' => User::find(1)->email
 ]);

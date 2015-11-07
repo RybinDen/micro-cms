@@ -3,10 +3,9 @@ define('LARAVEL_START', microtime(true));
 require __DIR__.'/vendor/autoload.php';
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
-    $r->addRoute('GET', '/', 'Controller:index');
-$r->addRoute('GET', '/contacts', 'Controller:contacts');
-$r->addRoute('GET', '/about', 'Controller:about');
-$r->addRoute('GET', '/test/{id:\d+}', 'trollercontacts');
+    $r->addRoute('GET', '/micro-cms/', 'Controller:index');
+$r->addRoute('GET', '/micro-cms/contacts', 'Controller:contacts');
+$r->addRoute('GET', '/micro-cms/about', 'Controller:about');
 });
 $httpMethod = $_SERVER['REQUEST_METHOD'];
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
