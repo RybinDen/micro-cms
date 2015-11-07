@@ -5,7 +5,7 @@
 	<meta name="keywords" content="Ваши ключевые слова до 1000 знаков для поиска сайта в интернете">
 <meta name="description" content="Краткое описание сайта до 200 знаков, отображается как фрагмент текста в результате поиска">
 <title><?=$this->e($title)?></title>
-<link rel="stylesheet" type="text/css" href="micro-cms/assets/css/site.css">
+<link rel="stylesheet" type="text/css" href="/micro-cms/assets/css/bootstrap.min.css">
 </head>
 <body>
 
