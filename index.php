@@ -1,5 +1,5 @@
 <?
-define('LARAVEL_START', microtime(true));
+define('TIME_START', microtime(true));
 require __DIR__.'/vendor/autoload.php';
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {

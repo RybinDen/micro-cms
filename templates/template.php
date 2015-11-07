@@ -25,5 +25,5 @@
 <?= $this->section('menu') ?>
 </div>
 <? $this->insert('footer') ?>
-<p> время: <?= round((microtime(1) - LARAVEL_START), 3) ?> </p>
+<p> время: <?= round((microtime(1) - TIME_START), 3) ?> </p>
   <p> память: <?= memory_get_usage () ?> </p>
